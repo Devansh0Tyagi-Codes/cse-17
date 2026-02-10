@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Clone</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f9f9f9;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:red;
+}
+
+.search-box input{
+    width:400px;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+
+/* Layout */
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:200px;
+    background:white;
+    height:100vh;
+    padding:15px;
+    box-shadow:2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:black;
+    padding:10px;
+    margin:5px 0;
+}
+
+.sidebar a:hover{
+    background:#eee;
+}
+
+/* Video Section */
+.videos{
+    flex:1;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.video-card{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-card img{
+    width:100%;
+}
+
+.video-info{
+    padding:10px;
+}
+
+.video-title{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.channel{
+    font-size:13px;
+    color:gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">YouTube</div>
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+    </div>
+    <div>User</div>
+</header>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="#">🏠 Home</a>
+        <a href="#">🔥 Trending</a>
+        <a href="#">📺 Subscriptions</a>
+        <a href="#">📚 Library</a>
+        <a href="#">⏰ History</a>
+    </div>
+
+    <div class="videos">
+
+        <div class="video-card">
+            <img src="https://img.youtube.com/vi/tgbNymZ7vqY/maxresdefault.jpg">
+            <div class="video-info">
+                <div class="video-title">Sample Video Title</div>
+                <div class="channel">Channel Name • 1M views</div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg">
+            <div class="video-info">
+                <div class="video-title">Music Video</div>
+                <div class="channel">Music Channel • 5M views</div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/maxresdefault.jpg">
+            <div class="video-info">
+                <div class="video-title">Learning Video</div>
+                <div class="channel">Education Channel • 800K views</div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://img.youtube.com/vi/LXb3EKWsInQ/maxresdefault.jpg">
+            <div class="video-info">
+                <div class="video-title">Tech Video</div>
+                <div class="channel">Tech Channel • 2M views</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
